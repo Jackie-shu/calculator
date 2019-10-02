@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Calculator</title>
+         <meta charset="UTF-8">
+         <link href="calculator.css" rel="stylesheet"  type="text/css">
+         <script type="text/javascript" src="calculator.js"></script>
+    </head>
+
+    <body>
+        <h3>Calculator</h3>
+        <table>
+            <!--head section-->
+            <tr id="screen">
+                <td>
+                    <input type="text" id="input" readonly="readonly">
+                </td>
+            </tr>
+            <!--button section-->
+            <tr>
+                <td>
+                    <input type="button" value="AC" onclick="clearAll()" id="button" style="color: white; background-color:darkred;">       
+                    <input type ="button" value="1" onclick="getNumber(1)" id="button">
+                    <input type ="button" value="2" onclick="getNumber(2)" id="button">
+                    <input type ="button" value="3" onclick="getNumber(3)" id="button">
+                    <br>
+                    <input type ="button" value="+" onclick="getOperate('+')" id="button">
+                    <input type ="button" value="4" onclick="getNumber(4)" id="button">
+                    <input type ="button" value="5" onclick="getNumber(5)" id="button">
+                    <input type ="button" value="6" onclick="getNumber(6)" id="button">
+                    <br>
+                    <input type ="button" value="-" onclick="getOperate('-')" id="button">
+                    <input type ="button" value="7" onclick="getNumber(7)" id="button">
+                    <input type ="button" value="8" onclick="getNumber(8)" id="button">
+                    <input type ="button" value="9" onclick="getNumber(9)" id="button">
+                    <br>
+                    <input type ="button" value="x" onclick="getOperate('*')" id="button">
+                    <input type ="button" value="/" onclick="getOperate('/')" id="button">
+                    <input type ="button" value="0" onclick="getNumber(0)" id="button">
+                    <input type ="button" value="=" onclick="equalTo()" id="button">
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
