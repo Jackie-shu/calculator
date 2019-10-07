@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Calculator</title>
+         <meta charset="UTF-8">
+         <link href="calculator-r.css" rel="stylesheet"  type="text/css">
+         <script type="text/javascript" src="calculator-r.js"></script>
+    </head>
+
+    <body>
+        <h3>Calculator</h3>
+        <table>
+            <!--head section-->
+            <tr id="screen">
+                <td>
+                    <input type="text" id="input" readonly="readonly">
+                </td>
+            </tr>
+            <!--button section-->
+            <tr id="grid">
+                <td>
+                    <button onclick="clearAll()" id="clearAll" class="span-two" style="color: white; background-color:darkred;">AC</button>  
+                    <button onclick="deleteOne()" id="cancelOne">DE</button>
+                    <button onclick="getOperate('+')" id="add" class="operateButton">+</button>
+                    <button onclick="getNumber(1)" id="one" class="numberButton">1</button>
+                    <button onclick="getNumber(2)" id="two" class="numberButton">2</button>
+                    <button onclick="getNumber(3)" id="three" class="numberButton">3</button>
+                    <button onclick="getOperate('-')" id="subtrac" class="operateButton">-</button>
+                    <button onclick="getNumber(4)" id="four" class="numberButton">4</button>
+                    <button onclick="getNumber(5)" id="five" class="numberButton">5</button>
+                    <button onclick="getNumber(6)" id="six" class="numberButton">6</button>                    
+                    <button onclick="getOperate('*')" id="multiply" class="operateButton">X</button>
+                    <button onclick="getNumber(7)" id="seven" class="numberButton">7</button>
+                    <button onclick="getNumber(8)" id="eight" class="numberButton">8</button>
+                    <button onclick="getNumber(9)" id="nine" class="numberButton">9</button>
+                    <button onclick="getOperate('/')" id="divise" class="operateButton">/</button>
+                    <button onclick="getNumber(0)" id="zero" class="numberButton">0</button>
+                    <button onclick="getNumber('.')" id="decimal">.</button>
+                    <button onclick="equalTo()" id="compute" class="span-two" style="color: white; background-color: darkgreen;">=</button>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
